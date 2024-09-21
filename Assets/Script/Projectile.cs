@@ -11,6 +11,11 @@ public class Projectile : MonoBehaviour
         this.direction = direction.normalized; // Normaliza a direção
     }
 
+    void Start()
+    {
+        transform.Rotate(-90f, 0, 0, Space.World);
+    }
+
     void Update()
     {
         // Move o projétil na direção especificada
