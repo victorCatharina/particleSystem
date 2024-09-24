@@ -13,7 +13,8 @@ public class Projectile : MonoBehaviour
     }
 
     void Start()
-    {            
+    {    
+        Destroy(this.gameObject, 5f);
     }
 
     void FixedUpdate()
